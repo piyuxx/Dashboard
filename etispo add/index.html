@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <img src="./Assets/text-intel-evo.png" />
+    </nav>
+    <main>
+        <div class="start" id="start-screen">
+            <img src="./Assets/text-tap-on-different-rooms.png" />
+            <button id="start-button">
+                <img src="./Assets/start-cta.png" />
+            </button>
+        </div>
+        <div class="img-container">
+            <div class="container">
+                <img src="./Assets/icon-office.webp" class="clickable-image" />
+                <img src="./Assets/icon-travel.webp" class="clickable-image" />
+                <img src="./Assets/icon-home.webp" class="clickable-image" />
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <img class="close" src="./Assets/back-btn.png" />
+            <img class="close2" src="./Assets/logo.png" />
+            <video class="modal-video" id="modal-video" autoplay muted loop>
+                <source src="./Assets/vfx-ios.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img class="modal-content" id="modal-image">
+            <div>
+                <div class="swipe" id="modal-images">
+                    <img src="/Assets/icon-swipe.png" />
+                    <img src="/Assets/swipe-to-look-around.png" />
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
