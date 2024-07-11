@@ -1,0 +1,58 @@
+@import "../../styles/responsive.scss";
+
+.chartBox {
+  display: flex;
+  // height: 100%;
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    max-width: 200px;
+  }
+
+
+  .boxInfo {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include sm {
+      gap: 20px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      @include xxl {
+        font-size: 14px;
+      }
+    }
+
+    h1 {
+      @include xxl {
+        font-size: 20px;
+      }
+    }
+
+    .progressBar {
+      height: 10px;
+      width: 100%;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      margin-top: 10px;
+      overflow: hidden;
+      margin-bottom: 4px;
+
+      .progress {
+        height: 100%;
+        background-color: #4caf50;
+        /* default color */
+        transition: width 0.3s ease-in-out;
+      }
+    }
+  }
+}

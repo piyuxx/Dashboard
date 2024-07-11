@@ -1,0 +1,168 @@
+@import "../../styles/responsive.scss";
+
+.topBox {
+  h1 {
+    margin-bottom: 20px;
+
+    @include xxl {
+      font-size: 24px;
+    }
+
+  }
+
+  .list {
+    .listItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      .user {
+        display: flex;
+        gap: 20px;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+
+          @include xxl {
+            display: none;
+          }
+
+          @include lg {
+            display: block;
+          }
+        }
+
+        .userTexts {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          .username {
+            font-size: 14px;
+            font-weight: 500;
+          }
+
+          .email {
+            font-size: 12px;
+
+            @include xxl {
+              display: none;
+            }
+
+            @include lg {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .amount {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .topBoxHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .topBoxTitle {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      h1 {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+
+      span {
+        font-size: 12px;
+        color: #888;
+      }
+    }
+  }
+
+  .additionalBoxes {
+    display: flex;
+    margin: 20px 0;
+
+    @include xl {
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include lg {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include md {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include sm {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .SecondBox {
+    flex: 1;
+    /* Each box takes equal space */
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    /* Adjust height as needed */
+    border: 1px solid #E0E0E0;
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      font-size: 8px;
+    }
+  }
+
+  .additionalBox {
+    flex: 1;
+    /* Each box takes equal space */
+    height: 50px;
+    /* Adjust height as needed */
+    border: 1px solid #E0E0E0;
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+
+    /* Adjust font size as needed */
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      font-size: 8px;
+    }
+  }
+
+  .Button {
+    background-color: #1F326C;
+    color: white;
+  }
+
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
