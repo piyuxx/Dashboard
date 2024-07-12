@@ -22,12 +22,14 @@
 
     @media (max-width: #{$xl}) {
       display: flex;
-      flex-direction: columns;
+      flex-direction: column;
       max-width: 700px; // Change display for xl screens
     }
 
     @media (max-width: #{$lg}) {
-      max-width: 1000px; // Adjust width for sm screens
+      display: flex;
+      flex-direction: column;
+      max-width: 1200px; // Adjust width for sm screens
 
     }
 
@@ -60,11 +62,13 @@
     }
 
     @media (max-width: #{$xl}) {
-      max-width: 700px; // Change display for xl screens
+
+      max-width: 750px; // Change display for xl screens
+
     }
 
     @media (max-width: #{$lg}) {
-      max-width: 1000px; // Adjust width for lg screens
+      max-width: 650px; // Adjust width for lg screens
     }
 
     @media (max-width: #{$md}) {
@@ -147,15 +151,20 @@
     }
 
     @media (max-width: #{$xl}) {
-      max-width: 900px; // Adjust width for xl screens
+      max-width: 770px; // Adjust width for xl screens
     }
 
     @media (max-width: #{$lg}) {
-      max-width: 900px; // Adjust width for lg screens
+      max-width: 850px; // Adjust width for lg screens
+    }
+
+    @media (max-width: #{$mmd}) {
+      max-width: 690px; // Adjust width for sm screens
+
     }
 
     @media (max-width: #{$md}) {
-      max-width: 470px; // Adjust width for sm screens
+      max-width: 630px; // Adjust width for sm screens
 
     }
 
